@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexandra Paiz · Projects</title>
+<meta name="description" content="Directory of Alexandra Paiz Delgado's deployed projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3EFE7;
+    --ink:#26231F;
+    --faint:#8A8378;
+    --line:#E0D9CC;
+    --card:#FBF9F4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    font-weight:300;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 28px}
+
+  header{padding:88px 0 64px}
+  .kicker{
+    font-size:11px;letter-spacing:.42em;text-transform:uppercase;
+    color:var(--faint);font-weight:400;margin-bottom:22px;
+  }
+  h1{
+    font-family:'Fraunces',serif;font-weight:300;
+    font-size:clamp(34px,5.4vw,54px);line-height:1.08;
+    letter-spacing:-0.01em;
+  }
+  .sub{margin-top:18px;max-width:52ch;color:var(--faint);font-size:15px;line-height:1.7}
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(310px,1fr));
+    gap:18px;
+    padding-bottom:96px;
+  }
+  a.card{
+    display:flex;flex-direction:column;gap:0;
+    background:var(--card);
+    border:1px solid var(--line);
+    text-decoration:none;color:inherit;
+    padding:30px 30px 26px;
+    min-height:230px;
+    transition:transform .28s cubic-bezier(.2,.6,.2,1), box-shadow .28s ease, border-color .28s ease;
+  }
+  a.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 44px -20px rgba(38,35,31,.28);
+    border-color:#CFC6B4;
+  }
+  .swatch{display:flex;gap:6px;margin-bottom:26px}
+  .swatch i{width:26px;height:5px;display:block}
+  .card h2{
+    font-family:'Fraunces',serif;font-weight:400;
+    font-size:23px;letter-spacing:.005em;line-height:1.15;
+  }
+  .card .tag{
+    margin-top:7px;font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;
+    color:var(--faint);font-weight:400;
+  }
+  .card p{
+    margin-top:14px;font-size:13.5px;line-height:1.65;color:#5C564C;flex:1;
+  }
+  .card .url{
+    margin-top:20px;font-size:12px;color:var(--faint);
+    display:flex;align-items:center;gap:8px;
+    border-top:1px solid var(--line);padding-top:16px;
+  }
+  .card .url .arrow{transition:transform .28s ease}
+  a.card:hover .url .arrow{transform:translateX(4px)}
+  a.card:hover .url{color:var(--ink)}
+
+  /* Ursa: the one dark card */
+  a.card.night{
+    background:#05060C;border-color:#171a26;color:#E7EAF2;
+  }
+  a.card.night p{color:#9AA3B8}
+  a.card.night .tag{color:#6E7890}
+  a.card.night .url{color:#6E7890;border-top-color:#171a26}
+  a.card.night:hover .url{color:#a8c7fa}
+  a.card.night:hover{border-color:#2a3050;box-shadow:0 18px 44px -18px rgba(5,6,12,.65)}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:30px 0 56px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    color:var(--faint);font-size:12px;letter-spacing:.06em;
+  }
+  @media(max-width:560px){
+    header{padding:60px 0 44px}
+    .grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="kicker">Alexandra Paiz Delgado</div>
+      <h1>Things I’ve built<br>and shipped.</h1>
+      <p class="sub">A living directory of my deployed projects — research, reading, coaching, planning, and a venture or two.</p>
+    </header>
+
+    <main class="grid">
+
+      <a class="card" href="https://research-site-eta.vercel.app" target="_blank" rel="noopener">
+        <span class="swatch"><i style="background:#F5F1E8"></i><i style="background:#26231F"></i><i style="background:#8A8378"></i></span>
+        <h2>Research</h2>
+        <div class="tag">Papers · Formularies</div>
+        <p>Published papers and a growing collection of course formularies — mathematics, finance, economics, philosophy, logic, and history.</p>
+        <span class="url">research-site-eta.vercel.app <span class="arrow">→</span></span>
+      </a>
+
+      <a class="card" href="https://alexandrapaiz.github.io/classics-library/" target="_blank" rel="noopener">
+        <span class="swatch"><i style="background:#F1E7D3"></i><i style="background:#6E1423"></i><i style="background:#B08D2F"></i></span>
+        <h2>Classics Library</h2>
+        <div class="tag">Personal canon</div>
+        <p>My library of the classics — some seventy works across eight traditions, from Scripture and the Greeks to mathematics and logic, with reading progress tracked.</p>
+        <span class="url">alexandrapaiz.github.io/classics-library <span class="arrow">→</span></span>
+      </a>
+
+      <a class="card" href="https://corpus-alexandrapd.vercel.app" target="_blank" rel="noopener">
+        <span class="swatch"><i style="background:#EFE9DF"></i><i style="background:#E6DFD1"></i><i style="background:#26231F"></i></span>
+        <h2>Corpus</h2>
+        <div class="tag">Coaching · Longevity</div>
+        <p>Science-based holistic longevity coaching for women — strength, flexibility, and cardio, grounded in my own research on women’s health.</p>
+        <span class="url">corpus-alexandrapd.vercel.app <span class="arrow">→</span></span>
+      </a>
+
+      <a class="card" href="https://corpus-portal-ten.vercel.app" target="_blank" rel="noopener">
+        <span class="swatch"><i style="background:#EFE9DF"></i><i style="background:#26231F"></i><i style="background:#8A8378"></i></span>
+        <h2>Corpus Portal</h2>
+        <div class="tag">Client app</div>
+        <p>The client side of Corpus — each client’s phases, streaks, strength goals, and prescriptions in one private, login-gated dashboard.</p>
+        <span class="url">corpus-portal-ten.vercel.app <span class="arrow">→</span></span>
+      </a>
+
+      <a class="card" href="https://alexandrapaiz.github.io/atelier-app/" target="_blank" rel="noopener">
+        <span class="swatch"><i style="background:#F7F4EE"></i><i style="background:#3A362F"></i><i style="background:#C9C1B2"></i></span>
+        <h2>Atelier</h2>
+        <div class="tag">Personal planner</div>
+        <p>My planning studio — boards, priorities, calendar, and life plan, synced across devices. Built for one, designed like it’s for many.</p>
+        <span class="url">alexandrapaiz.github.io/atelier-app <span class="arrow">→</span></span>
+      </a>
+
+      <a class="card night" href="https://ursa-minor-site.vercel.app" target="_blank" rel="noopener">
+        <span class="swatch"><i style="background:#05060C"></i><i style="background:#a8c7fa"></i><i style="background:#2a3050"></i></span>
+        <h2>Ursa Minor</h2>
+        <div class="tag">Venture · Polaris</div>
+        <p>Peer-to-peer supervised fine-tuning; outcome reward for open-ended generation. A new approach to RLHF, under a pixel-shader night sky.</p>
+        <span class="url">ursa-minor-site.vercel.app <span class="arrow">→</span></span>
+      </a>
+
+    </main>
+
+    <footer>
+      <span>Alexandra Paiz Delgado</span>
+      <span>Systems Engineer</span>
+    </footer>
+  </div>
+</body>
+</html>
